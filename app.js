@@ -131,10 +131,10 @@ sitemap(config, (sitemap, urls) => {
 				if (!!error) {
 					console.log();
 					if (!!result && !!result.message) {
-						console.error('Error! ' + result.message);
+						console.error('Error! ' + result.message + ' - ' + record.url);
 					}
 					if (!!error && !!error.message) {
-						console.error('Error! ' + error.message);
+						console.error('Error! ' + error.message + ' - ' + record.url);
 					}
 					console.log();
 				} else if (record.objectID !== result.objectID) {
